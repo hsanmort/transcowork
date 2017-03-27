@@ -1,10 +1,14 @@
 {
-  "name": "frontend",
+  "name": "ionFullApp",
   "app_id": "",
-  "proxies":[
-    {
-      "path": "/api",
-      "proxyUrl": "http://127.0.0.1:8080/api"
-    }
-  ]
+  "gulpStartupTasks": [
+    "sass",
+    "templatecache",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ],
+  "documentRoot": "www"
 }
